@@ -13,7 +13,7 @@ def line(katz_deli)
 end
 
 def take_a_number(katz_deli, name)
-  if current_line = 0
+  if current_line == 0
     katz_deli << name
     puts "Welcome, #{name}. You are number #{index} in line."
   end
@@ -23,7 +23,7 @@ def now_serving(katz_deli)
   if line > 0
     puts "Currently serving #{name}."
     katz_deli.shift
-  if line = 0
+  if line == 0
     puts "There is nobody waiting to be served!"
   end
 end
